@@ -1,0 +1,183 @@
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #D8D1CB; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.registro-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 50px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: white; 
+    background-image: url('/estar3.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 200px; 
+}
+
+.registro-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registro-box form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.registro-box form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.registro-box form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registro-box form button[type="submit"]:hover {
+    background-color:  #D8D1CB;
+}
+
+.navbar2 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 40px;
+    width: calc(100% - 8%);
+    top: 20px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.logo-image {
+    width: 35px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+.navbar-logo span {
+    color: black;
+}
+
+.navbar-links3 {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    margin-right: 2%;
+}
+
+.navbar-links3 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-links3 a:hover {
+    color: #555;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+@media (max-width: 1150px) {
+    .navbar2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+
+    .navbar-logo {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-links3 {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background-color: white;
+        position: center;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links3.open {
+        display: flex;
+    }
+
+    .registro-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 138vh;
+        background-color: #D8D1CB; 
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .registro-box {
+        width: 90%;
+        margin-top: 25%; 
+    }
+}

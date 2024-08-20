@@ -1,0 +1,259 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.contactos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 135vh; 
+    background-color: #D8D1CB; 
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column; 
+}
+
+.navbar6 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 8%);
+    top: 20px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.logo-image {
+    width: 35px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
+.navbar-logo span {
+    color: black;
+}
+
+.navbar-links6 {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    margin-right: 2%;
+}
+
+.navbar-links6 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-links6 a:hover {
+    color: #555;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+.cuadro {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1000px; 
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: white;
+    background-color: #000; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2%;
+}
+
+.cuadro-texto, .cuadro-formulario {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.cuadro-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadro-texto {
+    margin-bottom: 20px;
+}
+
+.cuadro-texto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cuadro-texto p {
+    font-size: 16px;
+    color: white;
+}
+
+.cuadro-formulario {
+    width: 100%;
+}
+
+.cuadro-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group2 {
+    margin-top: 20px;
+}
+
+.form-group2 label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-group2 input,
+.form-group2 textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.form-group2 input::placeholder,
+.form-group2 textarea::placeholder {
+    color: gray;
+}
+
+.msj {
+    height: 150px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #D8D1CB;
+}
+
+@media (max-width: 1150px) {
+    .navbar6 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+
+    .navbar-logo {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-links6 {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background-color: #D8D1CB;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links6.open {
+        display: flex;
+        background-color: white;
+    }
+
+    .form-group2 input,
+    .form-group2 textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #000;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-left: 2%;
+        color: black;
+    }
+
+    .form-group2 label {
+        font-size: 16px;
+        margin-left: 2%;
+        color: white;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .contactos-container {
+        padding: 20px;
+    }
+
+    .cuadro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        align-self: center;
+        padding: 8px 30px;
+        background-color: #333;
+        color: white;
+        margin-left: 2%;
+        width: 40%;
+        border-radius: 15px;
+        border: 2px solid black;
+        box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+}
